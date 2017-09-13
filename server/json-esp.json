@@ -1,0 +1,67 @@
+//localhost:8000/api/v1/authenticate
+{"username": "12345", "password": "12345"}
+
+// localhost:8000/api/v1/data/create?key=1234abcd
+
+//localhost:8000/api/v1/data/update
+
+{   
+	"_id": "59a8ff275c0e3b2337fe2757",
+	"versionApi": "0.0.1",
+    "key": "1234abcd",
+    "data_onof":{
+        "fan": 0,
+        "motor": 0,
+        "curtain":0,
+        "lamp": 1,
+        "heatingLamp": 1    	
+    },
+    "data_exchange":{
+        "temp": 26,
+        "humi": 60,
+        "light":58,
+        "ph": 10																																																																																				
+    },
+    "data_alarm":{
+        "tempAlarm":28,
+        "humiAlarm":70,
+        "lightAlarm":50,
+        "phAlarm":10
+    }
+}
+
+//api/v1/data/pubdata
+{
+  "_id": "59a8ff275c0e3b2337fe2757",
+  "data_onof": {
+    "fan": {
+      "values": false
+    },
+    "motor": {
+      "values": false
+    },
+    "curtain": {
+      "values": false
+    },
+    "lamp": {
+      "values": true
+    },
+    "heatingLamp": {
+      "values": true
+    }
+  },
+  "data_exchange": {
+    "temp": {
+      "valueAl": 55
+    },
+    "humi": {
+      "valueAl": 45
+    },
+    "light": {
+      "valueAl": 44
+    },
+    "ph": {
+      "valueAl": 6
+    }
+  }
+}
